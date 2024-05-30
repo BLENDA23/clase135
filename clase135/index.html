@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de agregar fila con jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+        /* Estilos simples para dar un aspecto agradable */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #textoInput {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        #botonGuardar {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #botonGuardar:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo de agregar fila con jQuery</h2>
+    <input type="text" id="textoInput" placeholder="Escribe algo...">
+    <button id="botonGuardar">Guardar</button>
+    <table id="tablaDatos">
+        <thead>
+            <tr>
+                <th>Texto Guardado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas agregadas dinámicamente aparecerán aquí -->
+        </tbody>
+    </table>
+</body>
+</html>
